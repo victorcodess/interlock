@@ -2,7 +2,7 @@ import logo from "./assets/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-50 top-[19px] left-0 right-0 mx-[95px] h-[80px] flex items-center justify-between rounded-[32px] px-8 border-[4px] border-white/[0.38] bg-white/10 backdrop-blur-[4px] shadow-[0_57px_96px_-8px_rgba(87,92,95,0.25)]">
+    <nav className="fixed z-50 top-[19px] left-0 right-0 mx-[95px] h-[80px] flex items-center justify-between rounded-[32px] px-8 outline outline-4 -outline-offset-[4px] outline-white/[38%] bg-white/10 backdrop-blur-[4px] shadow-[0_57px_96px_-8px_rgba(87,92,95,0.25)]">
       <div className="flex items-center justify-center gap-10">
         <img src={logo} alt="" className="w-[142px] cursor-pointer" />
         <div className="text-[#445568] text-[18px] font-semibold leading-[24px] flex gap-[32px] items-center justify-center">

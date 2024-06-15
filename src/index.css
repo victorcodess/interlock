@@ -14,3 +14,34 @@ body {
   box-shadow: 0px 20px 24px -4px rgba(14, 24, 41, 0.08),
     0px 8px 8px -4px rgba(14, 24, 41, 0.03);
 }
+
+.text-gradient {
+  background: linear-gradient(45deg, #7e69e8 0%, #ffb780 100%);
+
+  background: linear-gradient(
+    45deg,
+    color(display-p3 0.4824 0.4157 0.8784) 0%,
+    color(display-p3 1 0.7333 0.5373) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-gradient-one {
+  background: radial-gradient(
+    157.2% 114.74% at 54.01% 114.67%,
+    #ffd7e7 5.59%,
+    #e9ebfb 44.79%,
+    #fff 100%
+  );
+}
+
+.card-gradient-two {
+  background: radial-gradient(
+    186.08% 130.76% at 92.25% 123.75%,
+    #eeeffb 5.59%,
+    #fff4ee 44.79%,
+    #fff 100%
+  );
+}

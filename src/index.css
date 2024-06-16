@@ -45,3 +45,11 @@ body {
     #fff 100%
   );
 }
+
+.why-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.33) -41.3%,
+    #fff 66.67%
+  );
+}

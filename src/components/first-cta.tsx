@@ -7,7 +7,7 @@ import shadow from "../assets/shadow.svg";
 
 const FirstCTA = () => {
   return (
-    <section className="w-full h-[592px] bg-[#131316] py-24 flex relative px-[159px] items-center">
+    <section className="w-full h-[592px] bg-[#131316] py-24 flex relative px-[159px] items-center overflow-y-c lip">
       <div className="bg-white w-[425px] h-[425px] rounded-full absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto blur-[350px]" />
 
       <div className="w-[576px]">
@@ -24,7 +24,7 @@ const FirstCTA = () => {
         </button>
       </div>
 
-      <div className="absolute flex flex-col -space-y-[280px] -bottom-[310px] right-[149px]">
+      <div className="absolute flex flex-col -space-y-[290px] -bottom-[0px] right-[149px] bo rder bg- red-200 z-30 h-[650px] overflow-clip">
         <img src={cardFour} alt="" className="z-[12]" />
           <img src={cardThree} alt="" className="z-[11] rotate -[-30deg]" />
         <img src={cardTwo} alt="" className="z-[10]" />

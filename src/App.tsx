@@ -4,6 +4,7 @@ import Footer from "./footer";
 import SocialProof from "./components/social-proof";
 import Features from "./components/features";
 import FirstCTA from "./components/first-cta";
+import WhyUs from "./components/why-us";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SocialProof />
       <Features />
       <FirstCTA />
+      <WhyUs/>
       <Footer />
     </main>
   );

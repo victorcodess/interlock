@@ -5,6 +5,7 @@ import SocialProof from "./components/social-proof";
 import Features from "./components/features";
 import FirstCTA from "./components/first-cta";
 import WhyUs from "./components/why-us";
+import SecondCTA from "./components/second-cta";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Features />
       <FirstCTA />
       <WhyUs/>
+      <SecondCTA/>
       <Footer />
     </main>
   );

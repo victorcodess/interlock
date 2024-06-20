@@ -11,7 +11,7 @@ const SocialProof = () => {
       <p className="text-[18px] text-[#2f2b43]/60 leading-[26px] tracking-[-0.216px]">
         Trusted by the best
       </p>
-      <div className="flex gap-6 items-center justify-center">
+      <div className="flex flex-wrap gap-6 items-center justify-center">
         <img src={stripe} alt="" className="" />
         <img src={upwork} alt="" className="" />
         <img src={square} alt="" className="" />

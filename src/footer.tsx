@@ -2,13 +2,13 @@ import logoWhite from "./assets/logo-white.svg";
 
 const Footer = () => {
   return (
-    <footer className="overflow-hidden w-full h-[650px] bg-[#131316] text-white relative pt-16 pb-12 flex flex-col items-center justify-center gap-16 px-[112px]">
+    <footer className="overflow-hidden w-full h-auto md:h-[650px] bg-[#131316] text-white relative py-10 md:pt-16 md:pb-12 flex flex-col items-center justify-center gap-16 px-6 md:px-10 xl:px-[112px]">
       <div className="absolute top-[-216px] left-[-216px] w-[425px] h-[425px] bg-white rounded-[425px] blur-[350px]" />
 
-      <img src={logoWhite} alt="" className="w-[1315.875px] pt-8" />
+      <img src={logoWhite} alt="" className="w-[1315.875px] pt-8 3xl:max-w-[1200px]" />
 
-      <div className="w-full flex flex-col items-center justify-center gap-12">
-        <div className="w-full grid grid-cols-6 grid-rows-3 place-content-center place-items-start gap-x-[32px] gap-y-[12px] text-[#94969D] font-bold">
+      <div className="w-full flex flex-col items-center justify-center gap-12 3xl:max-w-[1200px]">
+        <div className="w-full grid grid-cols-3 md:grid-cols-6 grid-row-6 md:grid-rows-3 place-content-center place-items-start gap-x-[32px] gap-y-[12px] text-[#94969D] font-bold">
           <p>Solutions<span className="text-white text-[12px] font-medium leading-[18px] py-[2px] px-2 bg-white/10 rounded-full border border-white/30 text-center ml-2">New</span></p>
           <p>News</p>
           <p>Events</p>

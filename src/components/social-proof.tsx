@@ -7,11 +7,11 @@ import linear from "../assets/linear.svg";
 
 const SocialProof = () => {
   return (
-    <section className="w-full flex flex-col py-16 items-center justify-center gap-12">
-      <p className="text-[18px] text-[#2f2b43]/60 leading-[26px] tracking-[-0.216px]">
+    <section className="flex w-full flex-col items-center justify-center gap-12 py-16">
+      <p className="text-[18px] leading-[26px] tracking-[-0.216px] text-[#2f2b43]/60">
         Trusted by the best
       </p>
-      <div className="flex flex-wrap gap-6 items-center justify-center">
+      <div className="flex flex-wrap items-center justify-center gap-6">
         <img src={stripe} alt="" className="" />
         <img src={upwork} alt="" className="" />
         <img src={square} alt="" className="" />

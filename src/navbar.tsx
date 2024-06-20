@@ -2,28 +2,32 @@ import logo from "./assets/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-50 top-[19px] left-0 right-0 mx-[24px] md:mx-[40px] xl:mx-[95px] h-[65px] md:h-[80px] flex items-center justify-between rounded-[32px] px-6 md:px-8 outline outline-4 -outline-offset-[4px] outline-white/[38%] bg-white/10 backdrop-blur-[4px] shadow-[0_57px_96px_-8px_rgba(87,92,95,0.25)] 3xl:max-w-[1250px] 3xl:mx-auto">
+    <nav className="fixed left-0 right-0 top-[19px] z-50 mx-[24px] flex h-[65px] items-center justify-between rounded-[32px] bg-white/10 px-6 shadow-[0_57px_96px_-8px_rgba(87,92,95,0.25)] outline outline-4 -outline-offset-[4px] outline-white/[38%] backdrop-blur-[4px] md:mx-[40px] md:h-[80px] md:px-8 xl:mx-[95px] 3xl:mx-auto 3xl:max-w-[1250px]">
       <div className="flex items-center justify-center gap-10">
         <a href="/" className="w-[120px] xl:w-[142px]">
-          <img src={logo} alt="" className="w-[120px] md:w-[142px] cursor-pointer" />
+          <img
+            src={logo}
+            alt=""
+            className="w-[120px] cursor-pointer md:w-[142px]"
+          />
         </a>
-        <div className="text-[#445568] text-base xl:text-[18px] font-semibold leading-[24px] hidden md:flex gap-[20px] md:gap-[32px] items-center justify-center">
-          <p className="cursor-pointer hover:text-[#445568]/50 transition-all">
+        <div className="hidden items-center justify-center gap-[20px] text-base font-semibold leading-[24px] text-[#445568] md:flex md:gap-[32px] xl:text-[18px]">
+          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
             Home
           </p>
-          <p className="cursor-pointer hover:text-[#445568]/50 transition-all">
+          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
             Products
           </p>
-          <p className="cursor-pointer hover:text-[#445568]/50 transition-all">
+          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
             Resources
           </p>
-          <p className="cursor-pointer hover:text-[#445568]/50 transition-all">
+          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
             Services
           </p>
         </div>
       </div>
 
-      <button className="flex w-[110px] xl:w-[154px] h-[38px] md:h-[48px] bg-[#131316] rounded-full outline outline-4 -outline-offset-[0px] outline-white/[55%] bor der-[8px] bo rder-white/[0.55] items-center justify-center text-white btn-shadow text-sm xl:text-[18px] font-medium leading-[24px]">
+      <button className="bor der-[8px] bo rder-white/[0.55] btn-shadow flex h-[38px] w-[110px] items-center justify-center rounded-full bg-[#131316] text-sm font-medium leading-[24px] text-white outline outline-4 -outline-offset-[0px] outline-white/[55%] md:h-[48px] xl:w-[154px] xl:text-[18px]">
         Get App
       </button>
     </nav>

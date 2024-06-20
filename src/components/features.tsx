@@ -71,7 +71,7 @@ const Features = () => {
         <img
           src={notificationTwo}
           alt=""
-          className="absolute bottom-[-11px] left-10 md:left-[187px]"
+          className="absolute bottom-[-11px] left-0 md:left-[187px]"
         />
       </div>
     </section>

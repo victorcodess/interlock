@@ -1,6 +1,8 @@
 import heroBg from "../assets/hero-bg.png";
 import heroImg from "../assets/hero-img2.png";
 import arrow from "../assets/arrow.svg";
+import og1 from "../assets/interlock-og.png";
+import og2 from "../assets/interlock-og-2.png";
 
 const Hero = () => {
   return (
@@ -33,6 +35,9 @@ const Hero = () => {
         className="rotate- [-19.51deg] absolute bottom-[-455px] right-0 hidden w-[1395px] lg:block 3xl:right-[250px]"
         alt=""
       />
+
+      <img src={og1} alt="" className="hidden" />
+      <img src={og2} alt="" className="hidden" />
     </section>
   );
 };

@@ -87,7 +87,7 @@ const FirstCTA = () => {
             amount: "some",
             once: true,
           }}
-          className="md:-bottom-[50 px] lg:righ t-[149px] absolute -bottom-[0px] left-0 right-0 z-30 flex hidden h-[400px] w-full flex-col justify-start -space-y-[140px] overflow-clip sm:h-[500px] sm:-space-y-[290px] md:left-auto md:right-[50px] md:h-[500px] md:w-auto md:-space-y-[320px] lg:right-0 lg:h-[650px] lg:-space-y-[290px] xl:flex xl:-space-y-0"
+          className="md:-bottom-[50 px] lg:righ t-[149px] absolute -bottom-[0px] left-0 right-0 z-30 hidden h-[400px] w-full flex-col justify-start -space-y-[140px] overflow-clip sm:h-[500px] sm:-space-y-[290px] md:left-auto md:right-[50px] md:h-[500px] md:w-auto md:-space-y-[320px] lg:right-0 lg:h-[650px] lg:-space-y-[290px] xl:flex xl:-space-y-0"
         >
           <motion.img
             initial={{ opacity: 0, y: 250 }}

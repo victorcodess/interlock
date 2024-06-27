@@ -27,18 +27,13 @@ const WhyUs = () => {
   );
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log(latest);
     if (latest < 0.125) {
-      console.log("less than 0.125");
       setPosition(1);
     } else if (latest > 0.125 && latest < 0.25) {
-      console.log("less than 0.25");
       setPosition(2);
     } else if (latest > 0.25 && latest < 0.375) {
-      console.log("less than 0.375");
       setPosition(3);
     } else {
-      console.log("greater than 0.375");
       setPosition(4);
     }
   });

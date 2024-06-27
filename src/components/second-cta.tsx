@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const SecondCTA = () => {
   return (
-    <section className="relative w-full overflow-hidden px-6 py-10 md:px-10 md:py-[127px] xl:px-[159px]">
+    <section id="get-app" className="relative w-full overflow-hidden px-6 py-10 md:px-10 md:py-[127px] xl:px-[159px]">
       <img src={dotBg} alt="" className="absolute top-0 -z-20 w-full" />
       <img src={ctaGradient} alt="" className="absolute right-0 top-0 -z-[12]" />
       <div className="absolute bottom-[-540px] left-[292px] -z-[9] h-[772px] w-full bg-[#fffeff] blur-[150px] md:w-[785px]" />

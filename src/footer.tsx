@@ -66,8 +66,31 @@ const Footer = () => {
           <p>Dribbble</p>
           <p>Contact</p>
         </motion.div>
-        <p className="text-base font-medium leading-6 text-[#94969C]">
-          © 2074 interlock. All rights reserved.
+        <div className="w-full text-base font-medium leading-6 text-[#94969C] text-center sm:flex items-center justify-center gap-[5px]">
+        <p>
+          Design by
+          <a
+            href="https://x.com/ChoiceDsage"
+            target="_blank"
+            className="underline text-[#fff] hover:text-[#94969C] hover:no-underline underline-offset-4 transition-all cursor-pointer duration-300 ml-[5px]"
+          >
+            Samuel Alex
+          </a>
+        </p>
+        <p>
+        ✦ Development by
+          <a
+            href="https://www.victorwilliams.me"
+            target="_blank"
+            className="underline text-[#fff] hover:text-[#94969C] hover:no-underline underline-offset-4 transition-all cursor-pointer duration-300 mx-[5px]"
+          >
+            Victor Williams
+          </a>
+          — © 2024 Interlock
+        </p>
+      </div>
+        <p className="">
+          
         </p>
       </div>
     </footer>

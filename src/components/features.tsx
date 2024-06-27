@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Features = () => {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-6 border-t border-[#e2e4e9] px-6 py-16 md:px-10 xl:px-[159px]">
+    <section id="products" className="flex w-full flex-col items-center justify-center gap-6 border-t border-[#e2e4e9] px-6 py-16 md:px-10 xl:px-[159px]">
       <div className="flex w-full flex-col items-start justify-between gap-8 xl:flex-row xl:items-end 3xl:max-w-[1200px]">
         <div className="flex flex-col">
           <motion.p
@@ -88,10 +88,11 @@ const Features = () => {
             amount: "some",
             once: true,
           }}
-          className="flex h-[56px] w-[180px] items-center justify-center gap-3 rounded-full border-2 border-[#131316] text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px]"
+          className="flex h-[56px] w-[180px] items-center group relative overflow-hidden justify-center gap-3 rounded-full border-2 border-[#131316] text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px]"
         >
-          <span>Learn More</span>
-          <img src={arrow} alt="" />
+          <div className="absolute -left-1 bottom-0 right-0 -z-10 !mx-auto h-[0px] w-[207px] rounded-full bg-black transition-all duration-300 group-hover:h-[59px]" />
+          <span className="group-hover:text-white">Learn More</span>
+          <img src={arrow} alt="" className="group-hover:invert" />
         </motion.button>
       </div>
 

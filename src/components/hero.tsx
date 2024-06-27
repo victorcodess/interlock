@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
+    id="hero"
       style={{ backgroundImage: `url(${heroBg})` }}
       className="relative flex min-h-[810px] w-full flex-col items-center justify-center overflow-hidden bg-cover px-6 pt-[0px] md:flex-row md:items-start md:px-10 md:pt-[200px] lg:justify-start lg:pt-[237px] xl:px-[159px] 3xl:justify-center"
     >
@@ -68,10 +69,11 @@ const Hero = () => {
           }}
           className="mt-[55.5px] flex w-full flex-col items-center justify-center gap-6 md:flex-row lg:justify-start"
         >
-          <button className="h-[56px] w-[180px] rounded-full border-2 border-[#131316] text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px]">
-            Get Started
+          <button className="relative h-[56px] w-[180px] overflow-hidden rounded-full border-2 border-[#131316] text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px] group">
+            <div className="absolute bottom-0 h-[0px] w-[207px] -left-1 right-0 !mx-auto bg-black group-hover:h-[59px] transition-all duration-300 -z-10 rounded-full" />
+            <span className="group-hover:text-white">Get Started</span>
           </button>
-          <button className="flex h-[56px] w-[180px] items-center justify-center gap-3 rounded-full text-base font-medium leading-[28px] text-[#445568] md:h-[60px] md:w-[202px] md:text-[18px]">
+          <button className="flex h-[56px] w-[180px] items-center justify-center gap-3 rounded-full text-base font-medium leading-[28px] text-[#445568] md:h-[60px] md:w-[202px] md:text-[18px] hover:underline underline-offset-8 transition-all">
             <span> Learn More</span>
             <img src={arrow} alt="" />
           </button>
@@ -80,7 +82,7 @@ const Hero = () => {
 
       <img
         src={heroImg}
-        className="rotate- [-19.51deg] absolute bottom-[-455px] right-0 hidden w-[1395px] lg:block 3xl:right-[250px]"
+        className="rotate- [-19.51deg] absolute bottom-[-455px] right-0 mx-auto hidden w-[1395px] lg:block 3xl:left-0 3xl:right-[0px]"
         alt=""
       />
 

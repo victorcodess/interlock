@@ -2,6 +2,20 @@ import logo from "./assets/logo.svg";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+
+    const targetId = href.replace(/.*#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <motion.nav
       initial={{ opacity: 0 }}
@@ -27,23 +41,40 @@ const Navbar = () => {
           />
         </a>
         <div className="hidden items-center justify-center gap-[20px] text-base font-semibold leading-[24px] text-[#445568] md:flex md:gap-[32px] xl:text-[18px]">
-          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
+          <a
+            href="/#hero"
+            onClick={handleScroll}
+            className="cursor-pointer transition-all hover:text-[#445568]/50"
+          >
             Home
-          </p>
-          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
+          </a>
+          <a
+            href="/#products"
+            onClick={handleScroll}
+            className="cursor-pointer transition-all hover:text-[#445568]/50"
+          >
             Products
-          </p>
-          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
+          </a>
+          <a
+            href="/#resources"
+            onClick={handleScroll}
+            className="cursor-pointer transition-all hover:text-[#445568]/50"
+          >
             Resources
-          </p>
-          <p className="cursor-pointer transition-all hover:text-[#445568]/50">
+          </a>
+          <a
+            href="/#services"
+            onClick={handleScroll}
+            className="cursor-pointer transition-all hover:text-[#445568]/50"
+          >
             Services
-          </p>
+          </a>
         </div>
       </div>
 
-      <button className="bor der-[8px] bo rder-white/[0.55] btn-shadow flex h-[38px] w-[110px] items-center justify-center rounded-full bg-[#131316] text-sm font-medium leading-[24px] text-white outline outline-4 -outline-offset-[0px] outline-white/[55%] md:h-[48px] xl:w-[154px] xl:text-[18px]">
-        Get App
+      <button className="bor der-[8px] bo rder-white/[0.55] btn-shadow group relative flex h-[38px] w-[110px] items-center justify-center overflow-hidden rounded-full bg-[#131316] text-sm font-medium leading-[24px] text-white outline outline-4 -outline-offset-[0px] outline-white/[55%] transition-all hover:outline-[5px] hover:-outline-offset-1 hover:outline-white/[100%] md:h-[48px] xl:w-[154px] xl:text-[18px]">
+        <div className="absolute -bottom-[2px] -left-1 right-0 z-10 !mx-auto h-[0px] w-[160px] rounded-full bg-white transition-all duration-300 group-hover:h-[52px]" />{" "}
+        <span className="z-[11] group-hover:text-black">Get App</span>
       </button>
     </motion.nav>
   );

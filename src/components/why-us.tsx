@@ -20,7 +20,11 @@ const WhyUs = () => {
     offset: ["start center", "end start"],
   });
 
-  const height = useTransform(scrollYProgress, [0, 0.5], ["12.91512915129151%", "100%"]);
+  const height = useTransform(
+    scrollYProgress,
+    [0, 0.5],
+    ["12.91512915129151%", "100%"],
+  );
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     console.log(latest);
@@ -40,7 +44,10 @@ const WhyUs = () => {
   });
 
   return (
-    <section className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pb-7 md:pt-24 xl:px-[159px]">
+    <section
+      id="services"
+      className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pb-7 md:pt-24 xl:px-[159px]"
+    >
       <img src={whyGradient} alt="" className="absolute bottom-0 left-0" />
       <div className="relative flex w-full flex-col-reverse gap-16 md:flex-row 3xl:max-w-[1200px]">
         <motion.div
@@ -57,17 +64,17 @@ const WhyUs = () => {
             amount: "some",
             once: true,
           }}
-          className="relative z-10 h-[350px] sm:h-[450px] w-full object-cover md:h-[591px] md:min-w-[400px] xl:min-w-[592px]"
+          className="relative z-10 h-[350px] w-full object-cover sm:h-[450px] md:h-[591px] md:min-w-[400px] xl:min-w-[592px]"
         >
           <img
             src={innovation}
             alt=""
-            className={`absolute z-[13] h-full w-full object-cover transition-all duration-300 ${position === 1 ? "opacity-100" : "opacity-0"}`}
+            className={`absolute z-[13] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${position === 1 ? "opacity-100" : "opacity-0"}`}
           />
           <img
             src={transparency}
             alt=""
-            className={`absolute z-[12] h-full w-full object-cover transition-all duration-300 ${position <= 2 ? "opacity-100" : "opacity-0"}`}
+            className={`absolute z-[12] h-full w-full scale-[1.005] object-cover transition-all duration-300 ${position <= 2 ? "opacity-100" : "opacity-0"}`}
           />
           <img
             src={reliability}
@@ -87,7 +94,7 @@ const WhyUs = () => {
           </h3>
 
           <div className="relative mt-6 flex w-full flex-col items-center justify-center gap-6">
-            <div className="absolute left-0 top-0 h-full [544px] w-1 bg-[#eaecf0]">
+            <div className="[544px] absolute left-0 top-0 h-full w-1 bg-[#eaecf0]">
               <motion.div
                 style={{
                   height: height,

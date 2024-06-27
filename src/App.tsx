@@ -6,19 +6,22 @@ import Features from "./components/features";
 import FirstCTA from "./components/first-cta";
 import WhyUs from "./components/why-us";
 import SecondCTA from "./components/second-cta";
+import SmoothScrolling from "./components/smooth-scrolling";
 
 function App() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <SocialProof />
-      <Features />
-      <FirstCTA />
-      <WhyUs/>
-      <SecondCTA/>
-      <Footer />
-    </main>
+    <SmoothScrolling>
+      <main>
+        <Navbar />
+        <Hero />
+        <SocialProof />
+        <Features />
+        <FirstCTA />
+        <WhyUs />
+        <SecondCTA />
+        <Footer />
+      </main>
+    </SmoothScrolling>
   );
 }
 

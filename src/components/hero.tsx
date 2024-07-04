@@ -87,7 +87,7 @@ const Hero = () => {
       />
 
       <img src={og1} alt="" className="hidden" />
-      <img src={og2} alt="" className="hid den" />
+      <img src={og2} alt="" className="hidden" />
     </section>
   );
 };

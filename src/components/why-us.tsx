@@ -1,8 +1,8 @@
 import whyGradient from "../assets/why-gradient.svg";
-import innovation from "../assets/innovation.png";
-import transparency from "../assets/transparency.png";
-import reliability from "../assets/relaibility.png";
-import scalability from "../assets/scalabilty.png";
+import innovation from "../assets/innovation.webp";
+import transparency from "../assets/transparency.webp";
+import reliability from "../assets/relaibility.webp";
+import scalability from "../assets/scalabilty.webp";
 import {
   motion,
   useMotionValueEvent,

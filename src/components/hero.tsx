@@ -1,8 +1,8 @@
-import heroBg from "../assets/hero-bg.png";
-import heroImg from "../assets/hero-img2.png";
+import heroBg from "../assets/hero-bg.webp";
+import heroImg from "../assets/hero-img2.webp";
 import arrow from "../assets/arrow.svg";
-import og1 from "../assets/interlock-og.png";
-import og2 from "../assets/interlock-og-2.png";
+import og1 from "../assets/interlock-og.webp";
+import og2 from "../assets/interlock-og-2.webp";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -87,7 +87,7 @@ const Hero = () => {
       />
 
       <img src={og1} alt="" className="hidden" />
-      <img src={og2} alt="" className="hidden" />
+      <img src={og2} alt="" className="hid den" />
     </section>
   );
 };

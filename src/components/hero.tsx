@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
-    id="hero"
+      id="hero"
       style={{ backgroundImage: `url(${heroBg})` }}
       className="relative flex min-h-[810px] w-full flex-col items-center justify-center overflow-hidden bg-cover px-6 pt-[0px] md:flex-row md:items-start md:px-10 md:pt-[200px] lg:justify-start lg:pt-[237px] xl:px-[159px] 3xl:justify-center"
     >
@@ -69,11 +69,11 @@ const Hero = () => {
           }}
           className="mt-[55.5px] flex w-full flex-col items-center justify-center gap-6 md:flex-row lg:justify-start"
         >
-          <button className="relative h-[56px] w-[180px] overflow-hidden rounded-full border-2 border-[#131316] text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px] group">
-            <div className="absolute bottom-0 h-[0px] w-[207px] -left-1 right-0 !mx-auto bg-black group-hover:h-[59px] transition-all duration-300 -z-10 rounded-full" />
+          <button className="group relative h-[56px] w-[180px] overflow-hidden rounded-full border-2 border-[#131316] text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px]">
+            <div className="absolute -left-1 bottom-0 right-0 -z-10 !mx-auto h-[0px] w-[207px] rounded-full bg-black transition-all duration-300 group-hover:h-[59px]" />
             <span className="group-hover:text-white">Get Started</span>
           </button>
-          <button className="flex h-[56px] w-[180px] items-center justify-center gap-3 rounded-full text-base font-medium leading-[28px] text-[#445568] md:h-[60px] md:w-[202px] md:text-[18px] hover:underline underline-offset-8 transition-all">
+          <button className="flex h-[56px] w-[180px] items-center justify-center gap-3 rounded-full text-base font-medium leading-[28px] text-[#445568] underline-offset-8 transition-all hover:underline md:h-[60px] md:w-[202px] md:text-[18px]">
             <span> Learn More</span>
             <img src={arrow} alt="" />
           </button>

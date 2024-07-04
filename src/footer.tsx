@@ -40,7 +40,7 @@ const Footer = () => {
             amount: "some",
             once: true,
           }}
-          className="grid-row-6 grid w-full grid-cols-3 place-content-center place-items-start gap-x-[32px] gap-y-[12px] font-bold text-[#94969D] md:grid-cols-6 md:grid-rows-3"
+          className="grid-row-6 grid w-full grid-cols-2 sm:grid-cols-3 place-content-center place-items-start gap-x-[32px] gap-y-[12px] font-bold text-[#94969D] md:grid-cols-6 md:grid-rows-3"
         >
           <p>
             Solutions

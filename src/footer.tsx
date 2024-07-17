@@ -66,7 +66,7 @@ const Footer = () => {
           <p>Dribbble</p>
           <p>Contact</p>
         </motion.div>
-        <div className="w-full text-base font-medium leading-6 text-[#94969C] text-center sm:flex items-center justify-center gap-[5px]">
+        {/* <div className="w-full text-base font-medium leading-6 text-[#94969C] text-center sm:flex items-center justify-center gap-[5px]">
         <p>
           Design by
           <a
@@ -88,10 +88,7 @@ const Footer = () => {
           </a>
           — © 2024 Interlock
         </p>
-      </div>
-        <p className="">
-          
-        </p>
+      </div> */}
       </div>
     </footer>
   );
